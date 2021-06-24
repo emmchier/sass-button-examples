@@ -1,0 +1,99 @@
+@import '../themes/theme';
+@import '../utilities/mixins';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif !important;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0 !important;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: $primaryTextColor !important;
+}
+
+a {
+  color: $black-color;
+}
+
+h1,h2,h3,h4,p {
+  margin-bottom: 0;
+}
+
+p {
+  color: gray;
+}
+
+a, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+* {
+  transition: .1s ease-in-out;
+}
+
+h1 {
+  font-size: 4rem !important;
+}
+
+.cornersRight {
+  border-radius: 0px 30px 30px 0px;
+}
+
+.alignX {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+}
+
+.alignY {
+  display: flex !important;
+  align-items: left !important;
+  flex-direction: column !important;
+}
+
+.centerMiddle {
+  height: 100vh;
+  @include aligment(center, column, center);
+}
+
+.alignMiddleY {
+  height: 100vh;
+  @include aligment(flex-start, column, center);
+}
+
+.alignMiddleX {
+  @include aligment(center, column, center);
+}
+
+.goDown {
+  display: block !important;
+}
+
+.rightBorder {
+  border-right: 1px solid $borderHeaderCard;
+}
+
+// hide active border from bootstrap
+
+*:focus,
+button:focus,
+.form-control:focus {
+  outline: none !important;
+  outline: 0 !important;
+  outline: hidden !important;
+  box-shadow: none !important;
+}
+
+

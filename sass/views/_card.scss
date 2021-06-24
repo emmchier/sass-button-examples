@@ -1,0 +1,44 @@
+@import '../themes/theme';
+
+.card {
+    padding: 0 !important;
+}
+
+.service-card {
+    border-radius: 10px !important;
+    border: none !important;
+    overflow: hidden;
+    background: $backgroundCard !important;
+
+    .header-info {
+        background-color: $backgroundHeaderCard;
+
+        p {
+            color: $black-color;
+            margin: 10px 0;
+        }
+    }
+    
+    .card-body {
+
+        .card-title {
+            font-size: 2rem;
+        }
+    
+        .btn-custom {
+            width: 100%;
+        }
+    
+    } 
+
+    .accordion-body {
+        background-color: $backgroundCode;
+        border-radius: 10px !important;
+        margin-top: 20px;
+    }
+}
+
+/* smartphones */
+@media (max-width: 768px) { 
+    
+}

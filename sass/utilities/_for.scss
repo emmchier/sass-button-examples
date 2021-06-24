@@ -1,0 +1,12 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+@for $i from 1 through 5 {  
+    .elevation-#{$i} {
+        box-shadow: 0 8px 17px 2px rgba(71, 69, 69, 0.023 * $i), 
+                    0 3px 14px 2px rgba(71, 69, 69, 0.023 * $i), 
+                    0 5px 5px -3px rgba(107, 35, 35, 0.023 * $i);
+    }
+}
+
+

@@ -1,0 +1,12 @@
+@import '../themes/theme';
+
+%fabProps {
+    width: 55px;
+    height: 55px;
+    border-radius: 50% !important;
+    background-color: $primaryColor !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

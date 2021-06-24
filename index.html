@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass - Buttons</title>
+
+    <!-- Fontawsome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts - RALEWAY -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    
+    <!-- main.css -->
+    <link rel="stylesheet" href="sass/main.css" />
+
+  </head>
+  <body id="sassScreen">
+    <header>
+      <div class="navbar top-fixed navbar-expand-lg pushAside elevation-1">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Sass - Buttons<span> - Coder practices</span></a>
+          <div class="nav-content">
+            <nav class="mainNavigation collapse navbar-collapse visible">
+              <ul class="navbar-nav alignX">
+                <li class="nav-item">
+                  <a 
+                    class="nav-link customBtn customBtn__text alignX" 
+                    href="https://material.io/components"
+                    target="_blank">
+                      <img src="img/material-design.svg" alt="Material Design Logo">
+                      <span>Material Design Documentation</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="hero-info">
+              <h1>Material Design</h1>
+          </div>
+        </div>
+      </div>
+        <section id="sectionHome">
+          <div class="container">
+            <h2 class="sectionHome__title">Buttons</h2>
+              <h4 class="sectionHome__desc">
+                Different button types inspirated in Material Design.
+              </h4>
+              <!-- Sass code -->
+              <div class="service-card card" id="accordionExample">
+                <div class="card-content">
+                  <div class="accordion-header" id="heading1">
+                    <div class="row g-0 header-sass">
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="alignMiddleX">
+                          <h3>All by SASS</h3>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="alignMiddleX">
+                          <p class="sass-explanation">
+                            We create all kind of buttons with a sort of Sass variables, 
+                            mixins and operators. Check codes and see results.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-4 alignMiddleX">
+                        <button 
+                          class="
+                            customBtn 
+                            customBtn__outlined" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#collapse1" 
+                          aria-expanded="true" 
+                          aria-controls="collapse1">
+                            Sass code
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div 
+                    id="collapse1" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="heading1" 
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="code-container">
+                        <h4>SASS</h4>
+                        <pre class="sass-code"></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contained Button -->
+              <div class="service-card card" id="accordionExample">
+                <div class="card-content">
+                  <div class="accordion-header" id="heading2">
+                    <div class="row g-0">
+                      <div class="col-sm-12 col-lg-2">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Name</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <h3>Contained</h3>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Sizes</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="button-list">
+                            <li class="item-size">
+                              <h6>Small</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained
+                                  customBtn__contained--small">
+                                    Button
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <h6>Medium</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained
+                                  customBtn__contained--medium">
+                                    Button
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <h6>Large</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained
+                                  customBtn__contained--large">
+                                    Button
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX">
+                          <p>States</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="row states-container">
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <h6>Default</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained">
+                                Button
+                              </button>
+                            </li>
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <h6>Hovered</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained
+                                  customBtn__contained--hovered">
+                                Button
+                              </button>
+                            </li>
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <h6>Pressed</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained
+                                  customBtn__contained--pressed">
+                                Button
+                              </button>
+                            </li>
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <h6>Disabled</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__contained
+                                  customBtn--disabled">
+                                Button
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-code-container">
+                    <button 
+                      class="
+                        btn-code
+                        customBtn 
+                        customBtn__outlined 
+                        customBtn__outlined--small" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapse2" 
+                      aria-expanded="true" 
+                      aria-controls="collapse2">
+                      See Code
+                    </button>
+                  </div>
+                  <div 
+                    id="collapse2" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="heading2" 
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="code-container">
+                        <h4>CSS</h4>
+                        <pre class="contained-code"></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Outlined Button -->
+              <div class="service-card card" id="accordionExample">
+                <div class="card-content">
+                  <div class="accordion-header" id="heading3">
+                    <div class="row g-0">
+                      <div class="col-sm-12 col-lg-2">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Name</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <h3>Outlined</h3>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Sizes</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="button-list">
+                            <li class="item-size">
+                              <h6>Small</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__outlined
+                                  customBtn__outlined--small">
+                                    Button
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <h6>Medium</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__outlined
+                                  customBtn__outlined--medium">
+                                    Button
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <h6>Large</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__outlined
+                                  customBtn__outlined--large">
+                                    Button
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX">
+                          <p>States</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                            <ul class="row states-container">
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Default</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__outlined">
+                                  Button
+                                </button>
+                              </li>
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Hovered</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__outlined
+                                    customBtn__outlined--hovered">
+                                  Button
+                                </button>
+                              </li>
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Pressed</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__outlined
+                                    customBtn__outlined--pressed">
+                                  Button
+                                </button>
+                              </li>
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Disabled</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__outlined
+                                    customBtn--disabled">
+                                  Button
+                                </button>
+                              </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-code-container">
+                    <button 
+                      class="
+                        btn-code
+                        customBtn 
+                        customBtn__outlined 
+                        customBtn__outlined--small" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapse3" 
+                      aria-expanded="true" 
+                      aria-controls="collapse3">
+                      See Code
+                    </button>
+                  </div>
+                  <div 
+                    id="collapse3" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="heading3" 
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="code-container">
+                        <h4>CSS</h4>
+                        <pre class="outlined-code"></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text Button -->
+              <div class="service-card card" id="accordionExample">
+                <div class="card-content">
+                  <div class="accordion-header" id="heading4">
+                    <div class="row g-0">
+                      <div class="col-sm-12 col-lg-2">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Name</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <h3>Text</h3>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Sizes</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="button-list">
+                            <li class="item-size">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--small">
+                                  Small
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--medium">
+                                  Medium
+                              </button>
+                            </li>
+                            <li class="item-sizes">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--large">
+                                  Large
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX">
+                          <p>States</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="row states-container">
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--medium">
+                                  Default
+                              </button>
+                            </li>
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--medium
+                                  customBtn__text--hovered">
+                                  Hovered
+                              </button>
+                            </li>
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--medium
+                                  customBtn__text--pressed">
+                                  Pressed
+                              </button>
+                            </li>
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__text
+                                  customBtn__text--medium
+                                  customBtn--disabled">
+                                  Disabled
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-code-container">
+                    <button 
+                      class="
+                        btn-code
+                        customBtn 
+                        customBtn__outlined 
+                        customBtn__outlined--small" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapse4" 
+                      aria-expanded="true" 
+                      aria-controls="collapse4">
+                      See Code
+                    </button>
+                  </div>
+                  <div 
+                    id="collapse4" 
+                    class="accordion-collapse collapse" 
+                    aria-labelledby="heading4" 
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="code-container">
+                        <h4>CSS</h4>
+                        <pre class="text-code"></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAB Button -->
+              <div class="service-card card" id="accordionExample">
+                <div class="card-content">
+                  <div class="accordion-header" id="heading5">
+                    <div class="row g-0">
+                      <div class="col-sm-12 col-lg-2">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Name</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <h3 class="fab-title">
+                            FAB 
+                            <span class="goDown">(Floating Action 
+                              <span class="goDown">Button)</span>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX rightBorder">
+                          <p>Sizes</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="button-list">
+                            <li class="item-size">
+                              <h6>Small</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__fab
+                                  customBtn__fab--small">
+                                    <i class="material-icons btn-icon">add</i>
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <h6>Medium</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__fab
+                                  customBtn__fab--medium">
+                                  <i class="material-icons btn-icon">add</i>
+                              </button>
+                            </li>
+                            <li class="item-size">
+                              <h6>Large</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__fab
+                                  customBtn__fab--large">
+                                  <i class="material-icons btn-icon">add</i>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-5">
+                        <div class="header-info alignMiddleX">
+                          <p>States</p>
+                        </div>
+                        <div class="header-content alignMiddleX">
+                          <ul class="row states-container">
+                            <li class="col-sm-6 col-lg-6 alignMiddleX">
+                              <h6>Default</h6>
+                              <button 
+                                class="
+                                  customBtn 
+                                  customBtn__fab">
+                                  <i class="material-icons btn-icon">add</i>
+                              </button>
+                            </li>
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Hovered</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__fab
+                                    customBtn__fab--hovered">
+                                    <i class="material-icons btn-icon">add</i>
+                                </button>
+                              </li>
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Pressed</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__fab
+                                    customBtn__fab--pressed">
+                                    <i class="material-icons btn-icon">add</i>
+                                </button>
+                              </li>
+                              <li class="col-sm-6 col-lg-6 alignMiddleX">
+                                <h6>Disabled</h6>
+                                <button 
+                                  class="
+                                    customBtn 
+                                    customBtn__fab
+                                    customBtn--disabled">
+                                    <i class="material-icons btn-icon">add</i>
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-code-container">
+                      <button 
+                        class="
+                          btn-code
+                          customBtn 
+                          customBtn__outlined 
+                          customBtn__outlined--small" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse5" 
+                        aria-expanded="true" 
+                        aria-controls="collapse5">
+                        See Code
+                      </button>
+                    </div>
+                    <div 
+                      id="collapse5" 
+                      class="accordion-collapse collapse" 
+                      aria-labelledby="heading5" 
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="code-container">
+                          <h4>CSS</h4>
+                          <pre class="fab-code"></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        <footer>
+          <div class="container">
+            <p class="alignMiddleX">Emmanuel Chierchie &copy; 2021</p>
+          </div>
+        </footer>
+
+    <!-- JS -->
+
+    <!-- JQuery -->
+    <script 
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous"></script>
+      
+    <!-- bootstrap -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/data.js"></script>
+    <script src="js/loadInfo.js"></script>
+  </body>
+</html>

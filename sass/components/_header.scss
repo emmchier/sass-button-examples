@@ -1,0 +1,32 @@
+@import '../themes/theme';
+@import '../utilities/mixins';
+
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    padding-top: 30vh !important;
+    @include gradientBackground(
+        $backgroundGradientFrom, 
+        $backgroundGradientTo);
+
+    .hero-info {
+        position: relative;
+        z-index: 999;
+        margin-bottom: 5vh;
+
+        p {
+            color: #333333;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+    }
+    
+    .hero-header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        opacity: .5 !important;
+    }
+}

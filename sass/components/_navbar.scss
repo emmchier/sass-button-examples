@@ -1,0 +1,49 @@
+header {
+    position: fixed !important;
+    z-index: 9999 !important;
+    width: 100%;
+
+    .navbar {
+        background-color: $white-color;
+        height: 80px;
+
+    
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 2rem !important;
+    
+            span {
+                font-weight: 300;
+                font-size: 1.5rem !important;
+            }
+        }
+    
+        .nav-link {
+            color: #333333 !important;
+
+            span {
+                margin-left: 10px;
+            }
+
+            img {
+                width: 30px;
+            }
+    
+            &:hover {
+                color: $primaryColor !important;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media (min-width: 576px) {
+    .nav-link {
+        display: inline-block !important;
+        span {
+            // display: none;
+        }
+    }
+}
+  
+  

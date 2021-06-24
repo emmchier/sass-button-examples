@@ -1,0 +1,23 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+@each $type in $btn-types {
+    .customBtn__#{$type} {
+        @include buttonProps($type);
+    }
+    @each $size in $btn-sizes {
+        .customBtn__#{$type}--#{$size} {
+            @if $type == 'text'  {
+                @include buttonSizeText($size);
+            } @else if $type == 'fab' {
+                @include buttonSizeFab($size);
+            } @else {
+                @include buttonSize($size);
+            }
+        }
+    }
+}
+
+
+
+
